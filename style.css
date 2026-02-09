@@ -55,7 +55,6 @@ h1 {
 	vertical-align: middle;
 	margin: 0;
 	line-height: 1;
-	display: inline-block;
 	letter-spacing: -0.05em;
 }
 
@@ -171,3 +170,4 @@ footer a:hover {
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 0em;
 }
+
