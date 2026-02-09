@@ -80,6 +80,7 @@ a {
 }
 footer a {
 	color: black;
+	font-weight: 600;
 	display: block;
 	text-align: center;
 	text-decoration: none;
@@ -170,6 +171,7 @@ footer a:hover {
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 0em;
 }
+
 
 
 
