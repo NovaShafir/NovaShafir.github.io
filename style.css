@@ -48,7 +48,7 @@ footer {
 
 /* Typography */
 h1 {
-	font-size: 3em;
+	font-size: 2.5em;
 	color: black;
 	width: 60%;
 	font-weight: 800;
@@ -170,6 +170,7 @@ footer a:hover {
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 0em;
 }
+
 
 
 
