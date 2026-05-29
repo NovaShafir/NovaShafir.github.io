@@ -146,6 +146,7 @@ footer a:hover {
 	background-color: #00a7d6;
 	z-index: -1;
 	transform: rotate(-10deg);
+	overflow-x: hidden;
 }
 .work-content {
 	max-width: 60em;
