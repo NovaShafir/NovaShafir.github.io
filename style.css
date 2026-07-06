@@ -198,13 +198,11 @@ footer a:hover {
 }
 .obey footer a {
 	color: black;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 600;
+	font-family: 'Raleway', sans-serif;
 }
 
 .obey h1,
 .obey h2 {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 600;
+	font-family: 'Raleway', sans-serif;
 	letter-spacing: 0em;
 }
