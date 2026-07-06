@@ -33,8 +33,40 @@ header {
 	width: 100%;
 	background-color: #fff5e4;
 	padding: 0.5em 0.5em;
-
 }
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px 80px;
+}
+
+.avatar{
+    max-width:150px;
+    border-radius:50%;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    line-height:.9;
+    font-weight:900;
+}
+
+.hero h3{
+    margin:10px 0;
+    letter-spacing:-1px;
+}
+
+.hero p{
+    max-width:520px;
+    line-height:1.8;
+}
+
 footer {
 	background-color: #ffe900;
 	position: relative;
