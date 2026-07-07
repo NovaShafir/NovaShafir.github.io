@@ -257,16 +257,16 @@ footer a:hover {
 }
 
 .work:before {
-    content: "";
+	content: '';
 	position: absolute;
-    top: -25vw;
-	left: 0;
-	width: 100%;
-	height: calc(100% + 25vw);
-	background: #00a7d6;
-	clip-path: polygon(0% 7%, 100% 3%, 100% 45%, 0 49%);
+	top: -10vw;
+	right: -100vw;
+	width: 300vw;
+	min-height: 100vh;
+	background-color: #00a7d6;
 	z-index: -1;
-
+	transform: rotate(-10deg);
+	overflow-x: hidden;
 }
 
 .work-content {
