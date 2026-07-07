@@ -1,9 +1,12 @@
 /* NOVA */
 
 /* Base */
-* {
-	box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+
 body {
 	font-size: 16px;
 	margin: 0;
@@ -21,21 +24,31 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
 main {
 	max-width: 25em;
 	margin: 2em auto;
 	padding: 0.5em;
 }
-header {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background-color: #fff5e4;
-	padding: 0.5em 0.5em;
+
+header{
+
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: #fff5e4;
+    width:100%;
+    padding:25px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+
 }
 
+
 .hero{
+
     min-height:90vh;
     display:flex;
     flex-direction:column;
@@ -43,30 +56,94 @@ header {
     align-items:center;
     text-align:center;
     padding:120px 20px 80px;
+
 }
 
 .avatar{
+
     max-width:150px;
     border-radius:50%;
     margin-bottom:20px;
+
 }
 
 .hero h1{
+
     font-size:4rem;
     line-height:.9;
     font-weight:900;
-	padding-top: 25px;
+    padding-top: 25px;
+
 }
 
 .hero h3{
+
     margin:10px 0;
-    letter-spacing:-1px;
+	letter-spacing:-1px;
+
 }
 
 .hero p{
+
     max-width:520px;
+
     line-height:1.8;
+
 }
+
+
+.project {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    gap: 5rem;
+    width: min(1100px, 90%);
+    margin: 8em 0 0 0;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+}
+
+.project .text {
+    background: #fff5e4;
+    padding: 2.5rem;
+}
+
+.project .text p {
+	max-width: relative;
+	font-size: 10pt;
+}
+
+.project.reverse {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    gap: 5rem;
+    width: min(1100px, 90%);
+    margin: 8em 0 0 0;
+
+}
+
+.project.reverse img {
+    order: 2;
+}
+
+.project.reverse .text {
+    order: 1;
+}
+
+.text{
+    background:#fff5e4;
+    padding:40px;
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.text h2{
+	color: #2c2b69;
+}
+
 
 footer {
 	background-color: #ffe900;
@@ -161,13 +238,22 @@ footer a:hover {
 	text-align: center;	
 	margin: 0 auto;
 	padding: 2em 0;
+	color: #fff5e4;
 }
+
 .work {
 	background-color: #ec007d;
 	position: relative;
 	z-index: 1;
 	margin-top: 15vw;
 }
+
+.work h1 {
+	text-align: center;
+	color: #fff5e4;
+	padding: 2em 0 1em 0em;
+}
+
 .work:before {
 	content: '';
 	position: absolute;
@@ -188,6 +274,79 @@ footer a:hover {
 	width: 5em;
 }
 
+	/* Mobile Portfolio */
+
+@media (max-width: 768px) {
+
+	.itme {
+		min-width: 300px;
+	}
+
+    .project {
+
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 2rem;
+        margin: 4rem auto;
+    }
+
+    .project img {
+
+        width: 100%;
+        height: auto;
+        order: 1;
+    }
+
+    .project .text {
+
+        width: 100%;
+        padding: 1.8em;
+        order: 2;
+
+    }
+
+    .project .text h2{
+    	color: #2c2b69;
+    }
+
+    /* cancel the desktop reverse ordering */
+
+    .project.reverse {
+
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 2rem;
+        margin: 4rem auto;
+    }
+
+    .project.reverse img{
+
+        order: 1;
+
+    }
+
+    .project.reverse .text{
+
+        order: 2;
+
+    }
+
+    /* then force every project to image -> text */
+
+    .project img{
+
+        order:1;
+
+    }
+
+    .project .text{
+
+        order:2;
+
+    }
+
+}
+
 /* Obey */
 .obey, 
 .obey .work, 
@@ -201,9 +360,18 @@ footer a:hover {
 	font-family: 'Raleway', sans-serif;
 }
 
-.obey h1,
+.obey h1 {
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 0em;
+	color: black;
+}
 .obey h2 {
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 0em;
-	text-align: center;
+	color: black;
+}
+
+.obey .project .text {
+    background: white;
+    padding: 2.5rem;
 }
