@@ -19,6 +19,7 @@ body {
 	color: black;
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.3;
+	position: relative;
 }
 img {
 	max-width: 100%;
@@ -43,6 +44,7 @@ header{
     justify-content:space-between;
     align-items:center;
     z-index:100;
+    box-sizing: border-box;
 
 }
 
@@ -242,8 +244,8 @@ footer a:hover {
 }
 
 .work {
-	background-color: #ec007d;
-	position: relative;
+    position: relative;
+	background: #ec007d;
 	z-index: 1;
 	margin-top: 15vw;
 }
@@ -255,17 +257,18 @@ footer a:hover {
 }
 
 .work:before {
-	content: '';
+    content: "";
 	position: absolute;
-	top: -10vw;
-	right: -100vw;
-	width: 300vw;
-	min-height: 100vh;
-	background-color: #00a7d6;
+    top: -25vw;
+	left: 0;
+	width: 100%;
+	height: calc(100% + 25vw);
+	background: #00a7d6;
+	clip-path: polygon(0% 7%, 100% 3%, 100% 45%, 0 49%);
 	z-index: -1;
-	transform: rotate(-10deg);
-	overflow-x: hidden;
+
 }
+
 .work-content {
 	max-width: 60em;
 	margin: 0 auto;
@@ -345,6 +348,8 @@ footer a:hover {
 
     }
 
+    
+
 }
 
 /* Obey */
@@ -374,4 +379,3 @@ footer a:hover {
 .obey .project .text {
     background: white;
     padding: 2.5rem;
-}
