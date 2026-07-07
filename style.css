@@ -246,7 +246,6 @@ footer a:hover {
 	position: relative;
 	z-index: 1;
 	margin-top: 15vw;
-	overflow-x: hidden;
 }
 
 .work h1 {
