@@ -61,6 +61,17 @@ header{
 
 }
 
+.hero-case{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px 80px;
+
+}
+
 .avatar{
 
     max-width:150px;
@@ -240,6 +251,12 @@ footer a:hover {
 	text-align: center;	
 	margin: 0 auto;
 	padding: 2em 0;
+	color: #fff5e4;
+}
+
+.center-case {
+	text-align: center;	
+	margin: 0 auto;
 	color: #fff5e4;
 }
 
