@@ -267,7 +267,20 @@ footer a:hover {
 	margin-top: 15vw;
 }
 
+.work-case {
+    position: relative;
+	background: #00a7d6;
+	z-index: 1;
+	margin-top: 15vw;
+}
+
 .work h1 {
+	text-align: center;
+	color: #fff5e4;
+	padding: 2em 0 1em 0em;
+}
+
+.work-case h1 {
 	text-align: center;
 	color: #fff5e4;
 	padding: 2em 0 1em 0em;
@@ -281,6 +294,19 @@ footer a:hover {
 	width: 300vw;
 	min-height: 100vh;
 	background-color: #00a7d6;
+	z-index: -1;
+	transform: rotate(-10deg);
+	overflow-x: hidden;
+}
+
+.work-case:before {
+	content: '';
+	position: absolute;
+	top: -10vw;
+	right: -100vw;
+	width: 300vw;
+	min-height: 100vh;
+	background-color: #ec007d;
 	z-index: -1;
 	transform: rotate(-10deg);
 	overflow-x: hidden;
